@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Nunito:ital@1&family=Roboto&family=Roboto+Slab:wght@700&family=Trade+Winds&display=swap');
+
 body {
     background-color: white;
+    font-family: Nunito, Roboto, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 header {
     background-color: #20b2aa;
@@ -8,6 +14,7 @@ nav a {
     text-align: center;
     color: white;
     text-decoration: none;
+    padding: 35px;
 }
 nav a:hover {
     background-color: white;
@@ -16,12 +23,20 @@ nav a:hover {
 main section {
     text-align: center;
 }
+main section img {
+    box-sizing: border-box;
+}
+h2 {
+    margin: 0;
+}
 h4 {
     color: black;
 }
 footer {
     background-color: #20b2aa;
     color: #ffffe0;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 footer p {
     font-size: 1.2em;
@@ -36,8 +51,14 @@ footer a:hover {
 footer p a:hover {
     text-decoration: underline;
 }
+footer .social img {
+    padding-top: 15px;
+}
 .logo, .icon {
     width: 80px;
+}
+.icon {
+    padding-top: 10px;
 }
 .button-box {
     text-align: center;
@@ -46,6 +67,10 @@ footer p a:hover {
     background-color: #a50021;
     color: #ffffe0;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover {
     background-color: #ffffe0;
@@ -53,15 +78,29 @@ footer p a:hover {
 }
 .home-title {
     color: black;
+    font-family: "Trade Winds", "Roboto Slab", Cinzel;
+    font-size: 2em;
+    margin-top: 10px;
 }
 .msg {
     background-color: #00ccff;
+    line-height: 1.5em;
+    padding: 35px;
   }
 .msg h2 {
     color: black;
+    font-family: "Trade Winds", "Roboto Slab", Cinzel;
 }
 .msg p {
     color: black;
+    font-size: 0.8em;
+    padding-bottom: 15px;
+}
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+.card-img {
+    border: 10px solid #ffffe0;
 }
 #content {
     max-width: 1600px;
@@ -76,4 +115,7 @@ footer p a:hover {
 #background {
     height: 725px;
     background-color: #ffffe0;
+}
+#logo_link {
+    padding-top: 5px;
 }
