@@ -187,6 +187,112 @@ footer .social img {
     justify-self: center;
     align-self: center;
 }
+
+/* Begin styling for Rates page */
+.camping-package p, .rivers-package p, .rapids-package p, .family-package p {
+    color: black;
+    font-size: 0.8em;
+    margin: 0;
+    padding-bottom: 15px;
+}
+p.price {
+    font-size: 1.1em;
+}
+.camping-package h3, .rivers-package h3, .rapids-package h3, .family-package h3 {
+    margin: 0;
+    padding-bottom: 15px;
+}
+.camping-package h4, .rivers-package h4, .rapids-package h4, .family-package h4 {
+    margin: 0;
+}
+.home-title {
+    text-align: center;
+}
+.rates-title {
+    text-align: center;
+}
+.rates-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    row-gap: 30px;
+}
+.camping, .rivers, .rapids, .family {
+    width: 100%;
+    height: 500px;
+    grid-column: 2/7;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+.camping-icon, .rivers-icon, .rapids-icon, .family-icon {
+    width: 40px;
+    grid-column: 2/3;
+    z-index: 2;
+    opacity: 0.9;
+}
+.camping-package, .rivers-package, .rapids-package, .family-package {
+    background-color: #00ccff;
+    opacity: 0.9;
+    line-height: 1.5em;
+    padding: 35px;
+    grid-column: 6/10;
+    box-shadow: 5px 5px 10px #6f7364;
+    text-align: start;
+    transition: transform .5s;
+}
+.camping-package:hover, .rivers-package:hover, .rapids-package:hover, .family-package:hover {
+    transform: scale(1.1);
+
+}
+.camping {
+    grid-row: 2/5;
+}
+.camping-icon {
+    grid-row: 4/5;
+}
+.camping-package {
+    grid-row: 3/4;
+}
+.rivers {
+    grid-row: 6/9;
+}
+.rivers-icon {
+    margin-top: -40px;
+    grid-row: 8/9;
+}
+.rivers-package {
+    grid-row: 7/8;
+}
+.rapids {
+    grid-row: 10/13;
+}
+.rapids-icon {
+    margin-top: -40px;
+    grid-row: 12/13;
+}
+.rapids-package {
+    grid-row: 11/12;
+}
+.family {
+    grid-row: 14/17;
+}
+.family-icon {
+    margin-top: -40px;
+    grid-row: 16/17;
+}
+.family-package {
+    grid-row: 15/16;
+}
+/*
+.camping-package h2, .rivers-package h2, .rapids-package h2, .family-package h2 {
+    color: black;
+    font-family: "Trade Winds", "Roboto Slab", Cinzel;
+}
+*/
+#rates-content {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: #ffffe0;
+}
+/* Media Query */
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
