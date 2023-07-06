@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Noto+Sans:wght@300;400&family=Nunito:ital,wght@1,500&family=Roboto&family=Roboto+Slab:wght@700&display=swap');
+
+body {
+    background-color: white;
+    font-family: Nunito, "Noto Sans", Roboto, sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+header {
+    display: grid;
+    grid-template-columns: 150px 3fr 5fr;
+    background-color: #D7E8BA;
+    opacity: 0.8;
+}
+.logo-link {
+    align-self: center;
+}
+.logo {
+    width: 100%;
+    padding: 5px;
+}
+header p {
+    margin: 0;
+    align-self: center;
+    padding-left: 35px;
+}
+h1, h2, header p {
+    font-family: Cinzel, "Roboto Slab", serif;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+nav a {
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    padding: 20px;
+}
+nav a:hover {
+    background-color: #2E5077;
+    color: white;
+}
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    margin-top: -120px;
+}
+.hero-box {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+}
+#hero-family, #hero-fun, #hero-smile {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    /* overflow: clip;
+    overflow-clip-margin: content-box; */
+}
+#hero-smile {
+    opacity: 0;
+    transition: opacity 34s;
+}
+#hero-fun {
+    opacity: 0;
+    transition: opacity 8s;
+}
+.hero-box:hover #hero-fun, .hero-box:hover #hero-smile {
+    opacity: 1;
+}
+#hero-msg {
+    grid-column: 1 / 3;
+    grid-row: 3;
+    color: white;
+    padding: 20px;
+}
+.join, .learn {
+    background-color: #a50021;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+.join:hover, .learn:hover {
+    background-color: #2E5077;
+    color: white;
+}
+.home-grid {
+    margin-top: -240px;
+    background-color: white;
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+    text-align: center;
+}
+#main-content-container {
+    grid-row: 1 / 5;
+}
+#main-content-container p {
+    width: 90%;
+    margin: 0 auto 40px;
+    padding: 0 20px;
+    box-sizing: border-box;    
+}
+.main-quote-container {
+    grid-row: 5 / 11;
+    margin: 0 auto;
+    width: 100%;
+    height: 600px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+blockquote {
+    margin: 0 10px 0 0;
+    padding: 40px 40px 0px 40px;
+    font-family: "Roboto Slab", sans-serif;
+    font-style: italic;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    text-indent: 0.45em;
+    color: #611C35;    
+}
+blockquote::before {
+    content: "\201c";
+    font-size: 4em;
+    margin-left: -90px;
+}
+#seeking-quote {
+    grid-column:  2 / 3;
+    grid-row: 1 / 2;
+    border-left: 10px solid #ec4d87;
+    background-color: #f8f2f4;
+}
+#science-quote {
+    grid-column:  1 / 2;
+    grid-row: 1 / 2; 
+}
+#going-quote {
+    grid-column:  3 / 4;
+    grid-row: 1 / 2;
+}
+#science-quote {
+    opacity: 0;
+    transition: opacity 13s;
+}
+#going-quote {
+    opacity: 0;
+    transition: opacity 21s;
+}
+#seeking-quote:hover ~ blockquote {
+    opacity: 1;
+}
+
+.quote-source {
+    display: block;
+    padding-top: 80px;
+    font-style: normal;
+    font-size: 0.9em;
+}
+.quote-source::before {
+    content: "\2014\0020"
+}
+.quote-source, .anchor-quote-source {
+    font-weight: bold;
+}
+#anchor-quote-container {
+    grid-row: 12 / 13;
+}
+.anchor-quote {
+    margin: 0;
+    font-size: 0.9em;
+    font-style: italic;
+}
+.anchor-quote-source {
+    font-size: 0.8em;
+}
+footer {
+    background-color: #2E5077;
+    color: #D7E8BA;
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+}
+.footer-logo {
+    width: 100px;
+    float: left;
+    padding-top: 35px;
+    padding-left: 5px;
+}
+.useful-links {
+    display: flex;
+    justify-content: space-around;
+}
+footer p {
+    margin: 0;
+    padding-top: 50px;
+}
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 0.8em;
+}
+.contact ul, #social {
+    padding-left: 110px;
+}
+footer a {
+    text-decoration: none;
+    color: #D7E8BA;
+}
+footer a:hover {
+    color: white;
+}
