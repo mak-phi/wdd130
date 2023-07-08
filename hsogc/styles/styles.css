@@ -233,7 +233,7 @@ footer a:hover {
     width: 100%; 
     /* Full height */
     height: 100%;
-    background-image: url(/hsogc/images/kelly-sikkema-JpiaxBSuWK0-unsplash.jpg);
+    background-image: url(../images/kelly-sikkema-JpiaxBSuWK0-unsplash.jpg);
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
