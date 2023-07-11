@@ -51,6 +51,7 @@ nav a:hover {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(4, 1fr);
     margin-top: -120px;
+    /* position: relative; */
 }
 .hero-box {
     grid-column: 1 / -1;
