@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hera School of Gifted Children | Home</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        form {
+            /* Center the form on the page */
+            margin: 2em auto;
+            width: 400px;
+            /* Form outline */
+            padding: 1em;
+            border: 1px solid #ccc;
+            border-radius: 1em;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        form li + li {
+            margin-top: 1em;
+        }
+        label {
+            /* Uniform size & alignment */
+            display: inline-block;
+            width: 90px;
+            text-align: right;
+        }
+        input, textarea {
+            /* To make sure that all text fields have the same font settings
+            By default, textareas have a monospace font */
+            font: 1em sans-serif;
+            /* Uniform text field size */
+            width: 300px;
+            box-sizing: border-box;
+            /* Match form field borders */
+            border: 1px solid #999;
+        }
+        input:focus, textarea:focus {
+            /* Additional highlight for focused elements */
+            border-color: #000;
+        }
+        textarea {
+            /* Align multiline text fields with their labels */
+            vertical-align: top;
+            /* Provide space to type some text */
+            height: 5em;
+        }
+        .button {
+            /* Align buttons with the text fields */
+            padding-left: 90px; /* same size as the label elements */
+        }
+        button {
+            /* This extra margin represent roughly the same space as the space
+            between the labels and their text fields */
+            margin-left: 0.5em;
+        }
+        #feedback {
+            background-color: antiquewhite;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: .5em;
+            /* make this element invisible until we are ready for it */
+            display: none; 
+        }
+        .moveDown {
+            margin-top: 3em;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <a class="logo-link" href="index.html"><img class="logo" src="images/hera_school_of_gifted_children-logos_black_small.png" alt="Hera School of Gifted Children logo"></a>
+            <p>Hera School of Gifted Children</p>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="l-approach.html">Learning Approach</a>
+                <a href="l-tools.html">Learning Tools</a>
+                <a href="contactus.html">Contact Us</a>
+                <a href="#">Join Us</a>
+            </nav>
+        </header>
+        <main>
+            <div id="feedback"></div>
+            <form action="" method="post">
+                <ul>
+                    <li>
+                        <label for="name">Name:</label>
+                        <input type="text" name="user_name" id="name">
+                    </li>
+                    <li>
+                        <label for="">Email:</label>
+                        <input type="email" name="user_email" id="mail">
+                    </li>
+                    <li>
+                        <label for="msg">Message:</label>
+                        <textarea name="user_message" id="msg"></textarea>
+                    </li>
+                    <li class="button">
+                        <button type="submit">Send Your Message</button>
+                    </li>
+                </ul>
+            </form>
+        </main>
+        <footer>
+            <div class="contact">
+                <a class="logo-link" href="index.html"><img class="footer-logo" src="images/hera_school_of_gifted_children-logos_black_small.png" alt="Hera School of Gifted Children logo"></a>
+                <p>Hera School of Gifted Children</p>
+                <ul>
+                    <li>+254 011 235 813</li>
+                    <li>info@hsogc.ac.ke</li>
+                </ul>
+                <div id="social">
+                    <a href="https://facebook.com" target="_blank"><img src="images/facebook.png" alt="fb icon"></a>
+                    <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="twitter icon"></a>
+                    <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="instagram icon"></a>
+                </div>
+            </div>
+            <div class="useful-links">
+                <div>
+                    <p>Who We Are</p>
+                    <ul>
+                        <li><a href="index.html">Our Philosophy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p><a href="l-approach.html">Learning Approach</a></p>
+                </div>
+                <div>
+                    <p><a href="l-tools.html">Learning Tools</a></p>
+                </div>
+                <div>
+                    <p><a href="contactus.html">Contact Us</a></p>
+                </div>
+                <div>
+                    <p><a href="site-plan.html">Site Plan</a></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
